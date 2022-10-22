@@ -73,6 +73,26 @@
 ![obsDiagonalTrue](https://user-images.githubusercontent.com/72817265/197328451-eea82eb8-f6bf-44ca-ad56-00dfa9449393.png)
 
 
+### Movimientos válidos del rey
+#### El rey se puede mover en todas las direcciones pero solo 1 casilla.
+#### Para definir los distintos movimietnos del rey, he definido 3 cláusulas: una para su movimiento en la misma columna, otra para su movimiento en la misma fila y otra para su movimiento en diagonal.
+![movRey](https://user-images.githubusercontent.com/72817265/197328929-35860d91-24ac-4f7a-9130-b79af5730534.png)
+
+#### Para que un movimiento sea válido para el rey, se debe cumplir:
+- comprobamos que la pieza que queremos mover es un rey
+- vemos el color y la posición actual del rey
+- comprobamos que la diferencia entre columnas y/o filas es 1 (solo se mueve una casilla)
+- comprobamos que la casilla destino es válida (está en el tablero)
+- comprobamos que la casilla a la que quiere moverse no está ocupada por una pieza del mismo color
+
+
+#### Comprobamos que el rey se puede mover en todas las direcciones (solo 1 casilla), que se detectan las casillas válidas y no válidas, y que no puede moverse a una casilla ocupada por una pieza del mismo color:
+![compMovRey](https://user-images.githubusercontent.com/72817265/197329724-9e056aa8-e936-4a68-834a-4ef7ca1afe4a.png)
+
+
+
+
+
 
 
 
