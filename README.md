@@ -90,6 +90,19 @@
 ![compMovRey](https://user-images.githubusercontent.com/72817265/197329724-9e056aa8-e936-4a68-834a-4ef7ca1afe4a.png)
 
 
+### Movimientos válidos de la torre
+#### La torre se puede mover en la misma columna (hacia arriba y hacia abajo) o en la misma fila (hacia los lados) el número de casillas que quiera, pero no se puede mover en diagonal.
+#### Para definir estos movimientos, he definido 2 cláusulas: una para el movimiento en la misma columna y otro para el movimiento en la misma fila.
+![movTorre](https://user-images.githubusercontent.com/72817265/197329968-036ed71e-3a51-45b9-942e-cf141bc60511.png)
+
+#### Para que un movimiento sea válido para una torre, se debe cumplir:
+- comprobamos que la pieza que queremos mover es una torre
+- vemos el color y la posición inicial de la torre
+- comprobamos que o bien la columna origen y la del destino son distintas (me muevo en la misma fila), o que las filas origen y destino son distintas (me muevo por la misma columna)
+- comprobamos que la casilla destino es válida (está en el tablero)
+- comprobamos que no hay ningún obstáculo entre el origen y el destino
+- comprobamos que la casilla no está ocupada por una pieza del mismo color de la torre o, que está ocupada por una pieza de distinto color (la torre puede eliminar a esa pieza).
+
 
 
 
