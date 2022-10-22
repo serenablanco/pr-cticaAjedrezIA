@@ -44,7 +44,7 @@
 ### Obstáculos entre piezas
 #### Una regla muy importante es que las piezas (excepto el caballo) no puden saltar a otras piezas al moverse, por lo que tenemos que ver si hay obstáculos entre una pieza y su destino. Para ello necesitamos dos cláusulas: una para ver si hay obstáculos si la piezas se mueve en una misma columna o en una misma fila, y otra para ver si hay obstáculos cuando la pieza se mueve en diagonal.
 ![hayObstaculo](https://user-images.githubusercontent.com/72817265/197327187-9f584e44-e68f-4372-992e-64a9be2c14a0.png)
-Es cierto que hay un obstáculo si se cumple lo siguiente:
+#### Es cierto que hay un obstáculo si se cumple lo siguiente:
 - Debe haber una casilla ocupada por cualquier pieza (obstáculo)
 - La casilla anterior no puede ser la misma casilla de origen, es decir, la pieza que se quiere mover no es el obstáculo.
 - El obstáculo debe estar entre el origen y el destino: calculamos distancias y, el obstáculo debe estar más cerca del origen y del destino, mientras que el origen y el destino deben estar más lejos entre ellos.
