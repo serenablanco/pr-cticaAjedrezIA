@@ -42,7 +42,7 @@
 ![compDistancia](https://user-images.githubusercontent.com/72817265/197326975-18dd4dc3-6293-4bd6-80ed-432341fd8fe3.png)
 
 ### Obstáculos entre piezas
-#### Una regla muy importante es que las piezas (excepto el caballo) no puden saltar a otras piezas al moverse, por lo que tenemos que ver si hay obstáculos entre una pieza y su destino. Para ello necesitamos dos cláusulas: una para ver si hay obstáculos si la piezas se mueve en una misma columna o en una misma fila, y otra para ver si hay obstáculos cuando la pieza se mueve en diagonal.
+#### Una regla muy importante es que las piezas (excepto el caballo) no pueden saltar a otras piezas al moverse, por lo que tenemos que ver si hay obstáculos entre una pieza y su destino. Para ello necesitamos dos cláusulas: una para ver si hay obstáculos si la piezas se mueve en una misma columna o en una misma fila, y otra para ver si hay obstáculos cuando la pieza se mueve en diagonal.
 ![hayObstaculo](https://user-images.githubusercontent.com/72817265/197327187-9f584e44-e68f-4372-992e-64a9be2c14a0.png)
 #### Es cierto que hay un obstáculo si se cumple lo siguiente:
 - Debe haber una casilla ocupada por cualquier pieza (obstáculo)
@@ -52,6 +52,17 @@
 - Para un obstáculo en diagonal se debe cumplir que el obstáculo nunca sea igual al origen o igual al destino.
 
 #### Comprobamos que se detectan correctamente los obstáculos:
+- Obstáculo en la misma columna:
+
+![obstMismaColFalse](https://user-images.githubusercontent.com/72817265/197328126-b0027de7-ee2a-4659-9c32-cb9dab8574fe.png)
+
+- Obstáculo misma fila:
+
+![obsMismaFilaFalse](https://user-images.githubusercontent.com/72817265/197328138-b93dd9d3-308c-4e40-8da8-62adfa439c06.png)
+
+- Obstáculo misma fila con el caballo en medio
+
+![obsMismaFilaTrue](https://user-images.githubusercontent.com/72817265/197328158-e27c860b-882b-4bce-a7a9-058e6fe68ae8.png)
 
 
 
