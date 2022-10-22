@@ -64,6 +64,16 @@
 
 ![obsMismaFilaTrue](https://user-images.githubusercontent.com/72817265/197328158-e27c860b-882b-4bce-a7a9-058e6fe68ae8.png)
 
+- Obstáculo en diagonal:
+
+![obsDiagonalFalse](https://user-images.githubusercontent.com/72817265/197328435-d095fd27-bdc2-46a1-ad2a-3eb880e41a9c.png)
+
+- Obstáculo en diagonal con la reina en medio:
+
+![obsDiagonalTrue](https://user-images.githubusercontent.com/72817265/197328451-eea82eb8-f6bf-44ca-ad56-00dfa9449393.png)
+
+
+
 
 
 
