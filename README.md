@@ -33,7 +33,25 @@
 #### Comprobamos que la casilla (a, 3) es válida y que la casilla (e, 9) no lo es:
 ![compCasillaVal](https://user-images.githubusercontent.com/72817265/197326496-59897bc3-dff9-4d61-aeac-d8ecb231cd00.png)
 
+### Distancia entre casillas
+#### Vamos a hacer uso también de la distancia entre casillas. Para ello necesitamos 3 formas de calcular la distancia: distancia entre piezas de la misma columna, distancia entre piezas de la misma fila, distancia entre piezas en diagonal.
+![distanciaEntreCasillas](https://user-images.githubusercontent.com/72817265/197326849-4bb57167-5034-45a6-9e10-e77e66e8dfed.png)
+#### Para calcular la distancia entre piezas de la misma fila o en diagonal, tenemos que recurrir de nuevo al uso de los numeros correspondientes a las columnas, para poder calcular la diferencia entre las columnas.
 
+#### Comprobamos que se calculan bien las distancias:
+![compDistancia](https://user-images.githubusercontent.com/72817265/197326975-18dd4dc3-6293-4bd6-80ed-432341fd8fe3.png)
+
+### Obstáculos entre piezas
+#### Una regla muy importante es que las piezas (excepto el caballo) no puden saltar a otras piezas al moverse, por lo que tenemos que ver si hay obstáculos entre una pieza y su destino. Para ello necesitamos dos cláusulas: una para ver si hay obstáculos si la piezas se mueve en una misma columna o en una misma fila, y otra para ver si hay obstáculos cuando la pieza se mueve en diagonal.
+![hayObstaculo](https://user-images.githubusercontent.com/72817265/197327187-9f584e44-e68f-4372-992e-64a9be2c14a0.png)
+Es cierto que hay un obstáculo si se cumple lo siguiente:
+- Debe haber una casilla ocupada por cualquier pieza (obstáculo)
+- La casilla anterior no puede ser la misma casilla de origen, es decir, la pieza que se quiere mover no es el obstáculo.
+- El obstáculo debe estar entre el origen y el destino: calculamos distancias y, el obstáculo debe estar más cerca del origen y del destino, mientras que el origen y el destino deben estar más lejos entre ellos.
+- Para un obstáculo en la misma columna o fila, debe cumplirse que el origen, el obstáculo y el destino estén alineados: los tres están en la misma columna o los tres están en la misma fila.
+- Para un obstáculo en diagonal se debe cumplir que el obstáculo nunca sea igual al origen o igual al destino.
+
+#### Comprobamos que se detectan correctamente los obstáculos:
 
 
 
