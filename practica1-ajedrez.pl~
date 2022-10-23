@@ -58,14 +58,14 @@ hayObstaculo(ColOr, FilaOr, ColD, FilaD) :-
 
 %movimiento rey en la misma fila (hacia los lados)
 movimientoValido(Pieza, ColumnaDestino, Fila) :-
-    rey(Pieza),                                %la pieza a mover es realmente un rey
-    color(Pieza, Color),                       %guardamos su color para más adelante
-    casilla(Pieza, ColumnaOrigen, Fila),       %vemos en qué casilla está actualmente el rey
-    numero(ColumnaOrigen, NumColOrig),         %Vemos el número de la columna es la que está
-    numero(ColumnaDestino, NumColDest),        %Vemos el número de la columna a la que quiere ir
-    abs(NumColDest - NumColOrig) =:= 1,        %valor absoluto de la diferencia de columnas debe ser 1 (rey solo se mueve 1 casilla)
+    rey(Pieza),                                              %la pieza a mover es realmente un rey
+    color(Pieza, Color),                                     %guardamos su color para más adelante
+    casilla(Pieza, ColumnaOrigen, Fila),                     %vemos en qué casilla está actualmente el rey
+    numero(ColumnaOrigen, NumColOrig),                       %Vemos el número de la columna es la que está
+    numero(ColumnaDestino, NumColDest),                      %Vemos el número de la columna a la que quiere ir
+    abs(NumColDest - NumColOrig) =:= 1,                      %valor absoluto de la diferencia de columnas debe ser 1 (rey solo se mueve 1 casilla)
     casillaValida(NumColDest, Fila),
-    \+ (casilla(Pieza2, ColumnaDestino, Fila), %comprobar que no hay ninguna pieza del mismo color en la casilla destino
+    \+ (casilla(Pieza2, ColumnaDestino, Fila),               %comprobar que no hay ninguna pieza del mismo color en la casilla destino
         color(Pieza2, Color)).
 
 
@@ -95,16 +95,16 @@ movimientoValido(Pieza, ColumnaDestino, FilaDestino) :-
 
 %movimiento torre en una misma fila - hacia los lados
 movimientoValido(Pieza, ColumnaDestino, Fila) :-
-    torre(Pieza),                                          %comprobar que la pieza es una torre
-    color(Pieza, Color),                                   %ver su color
-    casilla(Pieza, Columna, Fila),                         %ver su posición actual
-    Columna \= ColumnaDestino,                             %comprobar que la columna destino es distinta a la columna en la que está (se tiene que mover)
-    numero(ColumnaDestino, NumColDest),                    %numero de la columna destino
-    casillaValida(NumColDest, Fila),                       %comprobar que la casilla destino es válida (está en el tablero)
+    torre(Pieza),                                                %comprobar que la pieza es una torre
+    color(Pieza, Color),                                         %ver su color
+    casilla(Pieza, Columna, Fila),                               %ver su posición actual
+    Columna \= ColumnaDestino,                                   %comprobar que la columna destino es distinta a la columna en la que está (se tiene que mover)
+    numero(ColumnaDestino, NumColDest),                          %numero de la columna destino
+    casillaValida(NumColDest, Fila),                             %comprobar que la casilla destino es válida (está en el tablero)
     \+ hayObstaculo(Columna, Fila, ColumnaDestino, Fila),
-    (   (\+ (casilla(Pieza2, ColumnaDestino, Fila),        %comprobar que la casilla está vacía o que hay una pieza del otro color
+    (   (\+ (casilla(Pieza2, ColumnaDestino, Fila),              %comprobar que la casilla está vacía o que hay una pieza del otro color
         color(Pieza2, Color)));
-    (   casilla(Pieza2, ColumnaDestino, Fila),             %si hay una pieza del otro color en la casilla destino, se elimina
+    (   casilla(Pieza2, ColumnaDestino, Fila),                   %si hay una pieza del otro color en la casilla destino, se elimina
         \+ color(Pieza2, Color))).
 
 

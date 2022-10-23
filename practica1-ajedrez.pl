@@ -191,6 +191,7 @@ mover(Pieza, ColumnaDestino, FilaDestino) :-
     retractall(casilla(Pieza, ColumnaOrigen, FilaOrigen)),
     assert(casilla(Pieza, ColumnaDestino, FilaDestino)).
 
+/*
 %el rey está amenazado
 jaque(Pieza1, Pieza2, Columna, Fila) :-
     rey(Pieza2),
@@ -203,6 +204,7 @@ jaque(Pieza1, Pieza2, Columna, Fila) :-
 jaqueMate(Pieza1, Pieza2) :-
     jaque(Pieza1, Pieza2).
     %retirar todas las piezas del tablero
+*/
 
 
 
