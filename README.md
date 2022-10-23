@@ -156,5 +156,14 @@
 ![compMovAlfil](https://user-images.githubusercontent.com/72817265/197391014-a8403f85-bd18-4ec5-826c-eeca91faa741.png)
 
 
+### Mover piezas en el tablero
+#### Todas las reglas anteriores son comprobaciones que podemos hacer para saber si podemos mover una pieza a una determinada casilla. Pero, las reglas anteriores no te permiten mover la pieza, solo afirman si se puede mover o no. Para poder mover una pieza en el tablero, usamos las siguientes cláusulas:
+![moverPieza](https://user-images.githubusercontent.com/72817265/197391250-a6cd3c39-0117-481a-996f-bc0f8faf3e70.png)
+
+
+
+
+
+
 
 
