@@ -103,6 +103,12 @@
 - comprobamos que no hay ningún obstáculo entre el origen y el destino
 - comprobamos que la casilla no está ocupada por una pieza del mismo color de la torre o, que está ocupada por una pieza de distinto color (la torre puede eliminar a esa pieza).
 
+#### Comprobamos que la torre solo se puede mover de arriba a abajo o de lado a lado, no en diagonal, y que detecta obstáculos.
+![movTorre1](https://user-images.githubusercontent.com/72817265/197389359-c70d6e63-3cfa-435d-a444-bb455e979cb8.png)
+![movTorre2](https://user-images.githubusercontent.com/72817265/197389366-238091bc-df5b-4dde-b5e2-0adde28ae255.png)
+
+
+
 
 
 
