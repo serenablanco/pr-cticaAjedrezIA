@@ -78,8 +78,8 @@
 #### Para definir los distintos movimietnos del rey, he definido 3 cláusulas: una para su movimiento en la misma columna, otra para su movimiento en la misma fila y otra para su movimiento en diagonal.
 ![movRey](https://user-images.githubusercontent.com/72817265/197328929-35860d91-24ac-4f7a-9130-b79af5730534.png)
 
-#### Para que un movimiento sea válido para el rey, se debe cumplir:
-- comprobamos que la pieza que queremos mover es un rey
+#### Para que un movimiento sea válido para el rey, se debe cumplir que:
+- la pieza que queremos mover es un rey
 - vemos el color y la posición actual del rey
 - comprobamos que la diferencia entre columnas y/o filas es 1 (solo se mueve una casilla)
 - comprobamos que la casilla destino es válida (está en el tablero)
@@ -95,8 +95,8 @@
 #### Para definir estos movimientos, he definido 2 cláusulas: una para el movimiento en la misma columna y otro para el movimiento en la misma fila.
 ![movTorre](https://user-images.githubusercontent.com/72817265/197329968-036ed71e-3a51-45b9-942e-cf141bc60511.png)
 
-#### Para que un movimiento sea válido para una torre, se debe cumplir:
-- comprobamos que la pieza que queremos mover es una torre
+#### Para que un movimiento sea válido para una torre, se debe cumplir que:
+- la pieza que queremos mover es una torre
 - vemos el color y la posición inicial de la torre
 - comprobamos que o bien la columna origen y la del destino son distintas (me muevo en la misma fila), o que las filas origen y destino son distintas (me muevo por la misma columna)
 - comprobamos que la casilla destino es válida (está en el tablero)
@@ -111,8 +111,8 @@
 #### El caballo se puede mover dos casillas en dirección horizontal o vertical y después una casilla más en ángulo recto (movimiento en 'L'). Es la única pieza que puede saltar a otras piezas para llegar a su casilla destino.
 ![movCaballo](https://user-images.githubusercontent.com/72817265/197389640-b6a77124-cc5b-4f8e-b732-96415952e43d.png)
 
-#### Para que un movimiento sea válido para un caballo, se debe cumplir:
-- comprobamos que la pieza a mover es un caballo
+#### Para que un movimiento sea válido para un caballo, se debe cumplir que:
+- la pieza a mover es un caballo
 - vemos el color y la posición inicial del caballo
 - comprobamos que la casilla destino es una casilla válida (dentro del tablero)
 - Se debe cumplir que la diferencia entre columnas origen y destino es 2 y entre las filas origen y destino es 1, o que la diferencia entre columnas es 1 y entre filas es 2.
@@ -122,8 +122,20 @@
 ![compMovCab](https://user-images.githubusercontent.com/72817265/197390011-a9174410-8a8d-444f-8a60-d4455cefaf4b.png)
 
 
+### Movimientos válidos de la reina
+#### La reina se puede mover en todas las direcciones, las casillas que desee, pero no puede saltar a otras piezas.
+![movReina](https://user-images.githubusercontent.com/72817265/197390084-e0fd8f1a-a6bf-4de2-9c96-308a96899887.png)
 
+#### Para que un movimiento sea válido para una reina, se debe cumplir que:
+- la pieza a mover es una reina
+- vemos el color y la casilla inicial de la reina
+- el destino es una casilla válida (pertenece al tablero)
+- la casilla destino no es la misma que la casilla origen
+- no hay ningún obstáculo
+- no hay ninguna pieza del mismo color en la casilla destino o puede hav¡ber una pieza de distinto color en la casilla destino
 
+#### Comprobamos que la reina se puede mover en todas las direcciones tantas casillas como quiera, pero no puede moverse a casillas no válidas o saltar otras piezas:
+![compMovReina](https://user-images.githubusercontent.com/72817265/197390441-fab76413-b6c2-4645-b2df-549c0d67e548.png)
 
 
 
