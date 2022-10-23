@@ -167,6 +167,14 @@
 - tras las comprobaciones, borraremos la pieza que vamos a mover de su casilla origen, y la cambiaremos con un assert a la casilla destino
 
 #### En el caso de mover la pieza a una casilla ocupada por otra pieza de distinto color, comprobamos que:
+- la casilla está ocupada por una pieza
+- esa pieza tiene distinto color a la pieza que vamos a mover
+- el movimiento es válido
+- tras las comprobaciones borramos a la pieza que vamos a mover de su casilla original
+- borramos a la pieza que ocupa la casilla destino (la pieza que movemos la elimina)
+- insertamos a la pieza que movemos en la casilla destino
+
+![compMover](https://user-images.githubusercontent.com/72817265/197392951-bbb09754-057c-431d-b42f-ea7c184cd5db.png)
 
 
 
