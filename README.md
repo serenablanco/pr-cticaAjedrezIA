@@ -160,7 +160,13 @@
 #### Todas las reglas anteriores son comprobaciones que podemos hacer para saber si podemos mover una pieza a una determinada casilla. Pero, las reglas anteriores no te permiten mover la pieza, solo afirman si se puede mover o no. Para poder mover una pieza en el tablero, usamos las siguientes cláusulas:
 ![moverPieza](https://user-images.githubusercontent.com/72817265/197391250-a6cd3c39-0117-481a-996f-bc0f8faf3e70.png)
 
+#### Podemos mover las piezas a una casilla vacía o a una casilla ocupada por otra pieza de distinto color.
+#### Para el primer caso, tendremos que comprobar que:
+- la casilla no está ocupada por ninguna pieza
+- el movimiento que se va a llevar a cabo es válido
+- tras las comprobaciones, borraremos la pieza que vamos a mover de su casilla origen, y la cambiaremos con un assert a la casilla destino
 
+#### En el caso de mover la pieza a una casilla ocupada por otra pieza de distinto color, comprobamos que:
 
 
 
