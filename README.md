@@ -118,6 +118,8 @@
 - Se debe cumplir que la diferencia entre columnas origen y destino es 2 y entre las filas origen y destino es 1, o que la diferencia entre columnas es 1 y entre filas es 2.
 - la casilla no puede estar ocupada por una pieza del mismo color, pero sí puede estar ocupada por una pieza del otro color (el caballo la puede eliminar)
 
+#### Comprobamos que el caballo solo se puede mover en forma de 'L', que puede saltar a otras piezas (no detecta obstáculos) y que detecta las casillas no válidas.
+![compMovCab](https://user-images.githubusercontent.com/72817265/197390011-a9174410-8a8d-444f-8a60-d4455cefaf4b.png)
 
 
 
