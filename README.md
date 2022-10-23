@@ -138,6 +138,23 @@
 ![compMovReina](https://user-images.githubusercontent.com/72817265/197390441-fab76413-b6c2-4645-b2df-549c0d67e548.png)
 
 
+### Movimientos válidos del alfil
+#### El alfil se puede mover tantas casillas como quiera en diagonal, sin saltar a otras piezas.
+![movAlfil](https://user-images.githubusercontent.com/72817265/197390563-3621d305-b4f7-43a8-bec2-916f6a6e5da4.png)
+
+#### Para que un movimeinto sea válido para un alfil, se debe cumplir que:
+- la pieza a mover es un alfil
+- vemos el color y la casilla inicial del alfil
+- la columna destino no es igual a la columna origen
+- la fila destino no es igual a la fila origen 
+- la casilla destino debe ser válida (pertenece al tablero)
+- la diferencia entre las columnas destino y origen y la diferencia entre las filas destino y origen debe ser igual, ya que para que se mueva en diagonal, la pieza debe moverse el mismo número de columnas que de filas
+- no puede haber obstáculos
+- la casilla destino no puede estar ocupada por una pieza del mismo color que el alfil, pero sí puede estar ocupada por una pieza de distinto color
+
+#### Comprobamos que el alfil solo se puede mover en diagonal, que detecta los obstáculos y que no puede moverse a casillas no válidas:
+![compMovAlfil](https://user-images.githubusercontent.com/72817265/197391014-a8403f85-bd18-4ec5-826c-eeca91faa741.png)
+
 
 
 
