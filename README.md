@@ -107,6 +107,16 @@
 ![movTorre1](https://user-images.githubusercontent.com/72817265/197389359-c70d6e63-3cfa-435d-a444-bb455e979cb8.png)
 ![movTorre2](https://user-images.githubusercontent.com/72817265/197389366-238091bc-df5b-4dde-b5e2-0adde28ae255.png)
 
+### Movimientos válidos del caballo
+#### El caballo se puede mover dos casillas en dirección horizontal o vertical y después una casilla más en ángulo recto (movimiento en 'L'). Es la única pieza que puede saltar a otras piezas para llegar a su casilla destino.
+![movCaballo](https://user-images.githubusercontent.com/72817265/197389640-b6a77124-cc5b-4f8e-b732-96415952e43d.png)
+
+#### Para que un movimiento sea válido para un caballo, se debe cumplir:
+- comprobamos que la pieza a mover es un caballo
+- vemos el color y la posición inicial del caballo
+- comprobamos que la casilla destino es una casilla válida (dentro del tablero)
+- Se debe cumplir que la diferencia entre columnas origen y destino es 2 y entre las filas origen y destino es 1, o que la diferencia entre columnas es 1 y entre filas es 2.
+- la casilla no puede estar ocupada por una pieza del mismo color, pero sí puede estar ocupada por una pieza del otro color (el caballo la puede eliminar)
 
 
 
